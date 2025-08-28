@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Controllers",
-    "\\Data",
-    "\\Models"
+    "\\bin",
+    "\\Migrations",
+    "\\Properties"
   ],
-  "SelectedNode": "\\TaskApp.API.csproj",
+  "SelectedNode": "\\.gitignore",
   "PreviewInSolutionExplorer": false
 }
