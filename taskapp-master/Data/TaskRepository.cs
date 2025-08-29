@@ -34,5 +34,15 @@ namespace TaskApp.API.Data {
             var employees = await this.context.Employees.Include(e => e.Patients).ToListAsync();
             return employees;
         }
+
+        public async Task<IEnumerable<Patient>> GetPatients()
+        {
+            return await this.context.Patients.ToListAsync();
+        }
+
+        public async Task<Patient> GetPatient(int id)
+        {
+            return await this.context.Patients.FirstOrDefaultAsync(p => p.Id == id);
+        }
     }
 }
