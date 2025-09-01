@@ -1,12 +1,15 @@
 <div class="employees-list">
   <h2>Employees</h2>
 
-  <div *ngIf="loading">Loading employees...</div>
-  <div *ngIf="error">{{ error }}</div>
-
-  <ul *ngIf="!loading && !error">
-    <li *ngFor="let emp of employees">
-      <strong>{{ emp.Username }}</strong> — {{ emp.City }}
-    </li>
-  </ul>
+  <div class="card-grid">
+    @for (emp of employees; track emp.id) {
+      <div class="employee-card">
+        <img [src]="emp.photoUrl" alt="{{ emp.username }}" class="employee-photo" />
+        <div class="employee-info">
+          <h3>{{ emp.username }}</h3>
+          <p>Patients: {{ emp.patients?.length }}</p>
+        </div>
+      </div>
+    }
+  </div>
 </div>

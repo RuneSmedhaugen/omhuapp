@@ -1,0 +1,27 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.employee-card {
+  background: #fff;
+  border-radius: 1px;
+  border: 1px solid black;
+  padding: 1px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.employee-card:hover {
+  transform: translateY(-4px);
+}
+
+.employee-info h3 {
+  margin: 0.5rem 0 0.25rem;
+}
+
+.employee-info p {
+  margin: 0;
+  color: #666;
+}
