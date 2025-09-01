@@ -155,4 +155,3 @@ C:\Users\Rune S\source\repos\omhuapp\taskapp-master\obj\Debug\netcoreapp8.0\refi
 C:\Users\Rune S\source\repos\omhuapp\taskapp-master\obj\Debug\netcoreapp8.0\TaskApp.API.pdb
 C:\Users\Rune S\source\repos\omhuapp\taskapp-master\obj\Debug\netcoreapp8.0\TaskApp.API.genruntimeconfig.cache
 C:\Users\Rune S\source\repos\omhuapp\taskapp-master\obj\Debug\netcoreapp8.0\ref\TaskApp.API.dll
-C:\Users\Rune S\source\repos\omhuapp\taskapp-master\obj\Debug\netcoreapp8.0\staticwebassets.upToDateCheck.txt
