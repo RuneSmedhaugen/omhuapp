@@ -16,15 +16,15 @@ export interface Employee {
   providedIn: 'root'
 })
 export class EmployeeService {
-  private apiUrl = 'http://localhost:5000/api';
+  private baseUrl = 'http://localhost:5000/api/Employees'; // ✅ corrected
 
   constructor(private http: HttpClient) {}
 
   getEmployees(): Observable<Employee[]> {
-    return this.http.get<Employee[]>(`${this.apiUrl}/GetEmplyees`);
+    return this.http.get<Employee[]>(this.baseUrl);
   }
 
   getEmployee(id: number): Observable<Employee> {
-    return this.http.get<Employee>(`${this.apiUrl}/GetEmplyee/${id}`);
+    return this.http.get<Employee>(`${this.baseUrl}/${id}`);
   }
 }
