@@ -1,0 +1,75 @@
+.employee-detail-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Employee card */
+.employee-card {
+  width: 250px;
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.employee-card img.employee-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* square image */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.employee-card .employee-info p {
+  margin: 0.5rem 0;
+}
+
+.employee-card .message-btn {
+  display: block;
+  margin: 1rem auto 0;
+  padding: 0.5rem 1rem;
+  background: green;
+  color: white;
+  border: 2px solid green;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Patients grid */
+.patients-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex: 1; /* fill remaining space */
+}
+
+/* Patient cards */
+.patient-card {
+  width: 100px;
+  height: 150px;
+  background: #f9f9f9;
+  padding: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.patient-card img.patient-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.patient-card h4 {
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+}
+
+.patient-card p {
+  font-size: 0.8rem;
+  margin: 0;
+}

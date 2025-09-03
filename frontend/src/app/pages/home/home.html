@@ -1,13 +1,12 @@
 <div class="employees-list">
-  <h2>Employees</h2>
-
+  <h1>Employees</h1>
   <div class="card-grid">
     @for (emp of employees; track emp.id) {
-      <div class="employee-card">
+      <div class="employee-card" routerLink="/employee/{{ emp.id }}">
         <img [src]="emp.photoUrl" alt="{{ emp.username }}" class="employee-photo" />
         <div class="employee-info">
           <h3>{{ emp.username }}</h3>
-          <p>Patients: {{ emp.patients?.length }}</p>
+          <p>Patients: {{ emp.patients.length }}</p>
         </div>
       </div>
     }

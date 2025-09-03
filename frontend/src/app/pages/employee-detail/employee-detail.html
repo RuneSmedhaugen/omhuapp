@@ -1,0 +1,22 @@
+<div class="employee-detail-container">
+  @if (employee) {
+    <div class="employee-card">
+    <img [src]="employee.photoUrl" alt="{{ employee.username }}" class="employee-photo" />
+    <div class="employee-info">
+      <p><b>Location:</b> {{ employee.city }}, {{ employee.country }}</p>
+      <p><b>Last active:</b> {{ lastActiveDays(employee.lastActive) }} days ago</p>
+    </div>
+    <button class="message-btn">Message</button>
+  </div>
+
+ <div class="patients-grid">
+    @for (pat of employee.patients; track pat.id) {
+      <div class="patient-card">
+        <img [src]="pat.photoUrl" alt="{{ pat.name }}" class="patient-photo" />
+        <h4>{{ pat.name }}</h4>
+        <p>{{ calculateAge(pat.dateOfBirth) }} years old</p>
+      </div>
+    }
+  </div>
+  }
+</div>

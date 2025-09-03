@@ -1,10 +1,15 @@
 <div class="app">
-  <header>
-    <div id="logo" routerLink="/home">Task App</div>
-    <button routerLink="/dashboard" routerLinkActive="active">Dashboard</button>
-    <button routerLink="/patients" routerLinkActive="active">Patients</button>
-    <button routerLink="/login" routerLinkActive="active">Login</button>
+  <header class="app-header">
+    <div class="left-group">
+      <div id="logo" routerLink="/home">Task App</div>
+      <nav class="nav-links">
+        <button routerLink="/dashboard" routerLinkActive="active">Dashboard</button>
+        <button routerLink="/patients" routerLinkActive="active">Patients</button>
+      </nav>
+    </div>
+    <button class="logout-btn" routerLink="/login" routerLinkActive="active">Logout</button>
   </header>
+
   <main>
     <router-outlet></router-outlet>
   </main>

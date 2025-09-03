@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeeService, Employee } from '../../services/employee';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './home.html',
   styleUrls: ['./home.css']
 })
@@ -18,7 +19,7 @@ export class Home implements OnInit {
   ngOnInit(): void {
     this.employeeService.getEmployees().subscribe({
       next: (data) => {
-        console.log('API response:', data); // 👈 debug log
+        console.log('API response:', data);
         this.employees = data;
         this.loading = false;
       },
