@@ -9,7 +9,7 @@
 - Start up the project (F5)  
 - Let it finish. This we do to download the data from omhu.com's API.  
 - Go to **Developer Powershell**  
-- Make sure the correct folder is targeted, for example:  
+- Make sure the correct folder is targeted, for example:  path/where/its/saved/taskapp-master
 - It should automatically be targeted, but if not write:  cd path/where/its/saved/taskapp-master
 *(change it to actual path)*  
 - If you have spaces in the path you need single quotes around it:  cd 'path with spaces/taskapp-master'
